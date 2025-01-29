@@ -29,7 +29,9 @@ function App() {
             justifyContent: "spaced-around",
           }}>
           <div>
-            <a href="https://www.facebook.com/cm.burns.739" target="_blank">
+            <a
+              href="https://www.facebook.com/christooher.feveck"
+              target="_blank">
               <FacebookIcon />
             </a>
           </div>
@@ -46,10 +48,15 @@ function App() {
 
           <div>
             {showmain && (
-              <NewspaperIcon
-                style={{ color: "#646cff", cursor: "pointer" }}
-                onClick={() => setshowblog(!showblog)}
-              />
+              <>
+                <span className="box">
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <NewspaperIcon
+                    style={{ color: "#646cff", cursor: "pointer" }}
+                    onClick={() => setshowblog(!showblog)}
+                  />
+                </span>
+              </>
             )}
           </div>
         </div>
@@ -140,28 +147,32 @@ function App() {
                                 and amplifying its reach through targeted
                                 marketing campaigns.
                                 <br />
-                                <br />
-                                <strong>Below are some of my projects:</strong>
-                                <br />
-                                <ul
-                                  style={{
-                                    display: "flex",
-                                    flexDirection: "row",
-                                  }}>
-                                  <li>
-                                    <a href="https://superior-atmosphere.com">
-                                      Superior Atmosphere.
-                                    </a>
-                                  </li>
-                                  &nbsp;&nbsp;&nbsp;
-                                  <li>
-                                    <a href="https://voyagesofvictora.web.app">
-                                      The Voyages of Victora - Series book.
-                                    </a>
-                                  </li>
-                                  &nbsp;&nbsp;&nbsp;
-                                </ul>
                               </p>
+                              <div style={{ textAlign: "center" }}>
+                                <h4>
+                                  <strong>
+                                    Below are some of my projects:
+                                  </strong>
+                                </h4>
+                              </div>
+                              <ul
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  textAlign: "center",
+                                }}>
+                                <li>
+                                  <a href="https://superior-atmosphere.com">
+                                    Superior Atmosphere.
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a href="https://voyagesofvictora.web.app">
+                                    The Voyages of Victora - Series book.
+                                  </a>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         )}
@@ -184,6 +195,8 @@ function App() {
                           style={{
                             color: "#646cff",
                             cursor: "pointer",
+                            display: "flex",
+                            justifyContent: "flex-end",
                           }}>
                           &nbsp;
                           <span
@@ -197,7 +210,7 @@ function App() {
                                 setshowblog(false);
                               }}
                             />
-                            &nbsp;BACK
+                            &nbsp;HOME
                           </span>
                         </div>
                       )}
@@ -209,7 +222,7 @@ function App() {
               </div>
             </div>
           }
-
+          <hr />
           <div className="copyright">
             <div>
               <span>created and maintained by</span>&nbsp;
@@ -218,6 +231,7 @@ function App() {
               </span>
             </div>
           </div>
+          <br />
         </div>
       </div>
     </>
