@@ -1,27 +1,26 @@
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.copyright {
-    display: flex;
-    justify-content: center;
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
 }
 
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.box {
-    animation: bounce 1s linear infinite;
+main {
+  flex: 1;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
