@@ -1,4 +1,6 @@
 /* src/App.css */
+@import './styles/spring-theme.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +10,8 @@
 body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #ffffff;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
 
 .App {
@@ -21,6 +23,22 @@ body {
 main {
   flex: 1;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+}
+
+/* Spring-themed scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--spring-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--spring-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--spring-secondary);
 }
